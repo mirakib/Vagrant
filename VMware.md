@@ -1,5 +1,3 @@
-![Vagrant logo.](https://tech.osteel.me/images/2015/01/25/vagrant.png)
-
 To automatically provision Ubuntu virtual machines in VMware using Vagrant, you'll need to follow a multi-step process. This involves installing Vagrant, the correct VMware provider plugin, and then configuring a Vagrantfile to define your virtual machine's settings.
 
 To automatically provision Ubuntu virtual machines in VMware using Vagrant, you'll need to follow a multi-step process. This involves installing Vagrant, the correct VMware provider plugin, and then configuring a Vagrantfile to define your virtual machine's settings.
