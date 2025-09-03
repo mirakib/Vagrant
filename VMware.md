@@ -51,12 +51,14 @@ end
 
 ## Basic Commands
 
-1. Bring up all machines: vagrant up
+1. Bring up all machines: `vagrant up`
 
-2. Bring up a specific machine: `vagrant up <machine_name> (e.g., vagrant up web)`
+4. Bring up a specific machine: `vagrant up <machine_name> (e.g., vagrant up web)`
+   
+6. List all active machines: `vagrant global-status`
 
-3. SSH into a specific machine: `vagrant ssh <machine_name> (e.g., vagrant ssh db)`
+7. SSH into a specific machine: `vagrant ssh <machine_name> (e.g., vagrant ssh db)`
 
-4. Halt a specific machine: `vagrant halt <machine_name>`
+8. Halt a specific machine: `vagrant halt <machine_name>`
 
-5. Destroy all machines: `vagrant destroy`
+9. Destroy all machines: `vagrant destroy`
