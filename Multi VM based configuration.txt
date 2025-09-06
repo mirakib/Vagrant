@@ -1,0 +1,35 @@
+Vagrant.configure("2") do |config|
+  # Define the 'web' machine
+  config.vm.define "WEB" do |web|
+    web.vm.box = "generic/ubuntu2004"
+    web.vm.hostname = "web"
+    web.vm.network "private_network", ip: "192.168.56.11"
+    
+    web.vm.provider "vmware_desktop" do |v|
+      v.memory = "2048"
+      v.cpus = 2
+    end
+    
+    web.vm.provision "shell", inline: <<-SHELL
+      sudo apt-get update -y
+      echo "Web server provisioned!"
+    SHELL
+  end
+
+  # Define the 'db' machine
+  config.vm.define "db" do |db|
+    db.vm.box = "generic/ubuntu2004"
+    db.vm.hostname = "DB"
+    db.vm.network "private_network", ip: "192.168.56.12"
+    
+    db.vm.provider "vmware_desktop" do |v|
+      v.memory = "2048"
+      v.cpus = 2
+    end
+    
+    db.vm.provision "shell", inline: <<-SHELL
+      sudo apt-get update -y
+      echo "Database server provisioned!"
+    SHELL
+  end
+end
