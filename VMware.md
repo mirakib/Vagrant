@@ -33,7 +33,7 @@ Here is an example Vagrant configuration for a single Ubuntu VM
    
   ```
   Vagrant.configure("2") do |config|
-  config.vm.box = "generic/ubuntu2004"
+  config.vm.box = "generic/ubuntu2204"
 
   # Configure a static IP address for the VM.
   config.vm.network "private_network", ip: "192.168.56.10"
